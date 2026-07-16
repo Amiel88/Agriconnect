@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Admin Login - AgriConnect Rwanda</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link href="styles/adminlogin.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    
+<div class="navbar">
+
+   
+
+    <a href="index.html">Home</a>
+
+    <a href="users.html">Register</a>
+
+    <a href="user-dashboard.html">User Dashboard</a>
+
+    <a href="admin-login.html">Admin Login</a>
+
+</div>
+
+    <div class="login-box">
+
+        <h1>Admin Login</h1>
+
+        <label>Admin Username</label>
+
+        <input type="text" id="username" placeholder="Enter username">
+
+        <label>Password</label>
+
+        <input type="password" id="password" placeholder="Enter password">
+
+        <input type="button" value="Login" onclick="login()">
+
+        <p id="message"></p>
+
+    </div>
+
+    <footer>
+        <p>© 2026 AgriConnect Rwanda | Secure Admin Access</p>
+    </footer>
+
+    <script>
+
+        function login(){
+
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if(username == "Amiel NIYOGISUBIZO" && password == "Amieli"){
+
+                window.location.href = "admin.html";
+
+            }
+
+            else{
+
+                document.getElementById("message").innerHTML =
+                "Invalid Username or Password";
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>

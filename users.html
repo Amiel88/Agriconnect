@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Users - AgriConnect Rwanda</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link href="styles/users.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="navbar">
+
+    
+
+    <a href="index.html">Home</a>
+
+    <a href="users.html">Register</a>
+
+    <a href="user-dashboard.html">User Dashboard</a>
+
+    <a href="admin-login.html">Admin Login</a>
+
+</div>
+
+    <div class="container">
+
+        <h1>Stakeholder Information</h1>
+
+        <table border="2">
+
+            <tr>
+                <th>User Category</th>
+                <th>Type</th>
+                <th>Description / Role</th>
+            </tr>
+
+            <tr>
+                <td rowspan="3"><b>Internal Users</b></td>
+                <td>Farmers</td>
+                <td>Sell products and manage agricultural activities.</td>
+            </tr>
+
+            <tr>
+                <td>Cooperatives</td>
+                <td>Manage groups of farmers and logistics.</td>
+            </tr>
+
+            <tr>
+                <td>Wholesalers</td>
+                <td>Buy products in large quantities.</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2"><b>External Users</b></td>
+                <td>Consumers</td>
+                <td>Purchase fresh produce from farmers.</td>
+            </tr>
+
+            <tr>
+                <td>Transporters</td>
+                <td>Provide transport and delivery services.</td>
+            </tr>
+
+        </table>
+
+        <fieldset>
+
+            <legend>New User Registration</legend>
+
+            <form id="registerForm">
+
+    <label>Full Name</label>
+    <input type="text" id="fullNames" placeholder="Enter your full name">
+
+    <label>Email Address</label>
+    <input type="email" id="email" placeholder="Enter your email">
+
+    <label>Password</label>
+    <input type="password" id="password" placeholder="Enter password">
+
+    <label>User Type</label>
+
+    <select id="userType">
+        <option value="">--Select User Type--</option>
+        <option value="farmer">Farmer</option>
+        <option value="transporter">Transporter</option>
+        <option value="consumer">Consumer</option>
+    </select>
+
+    <button type="submit" id="regBtn">Register Now</button>
+
+</form>
+        </fieldset>
+
+    </div>
+
+    <footer>
+        <p>© 2026 AgriConnect Rwanda | All Rights Reserved
+            for more information tel no: 0798385123
+        </p>
+    </footer>
+<script src="/scripts/users.js"></script>
+</body>
+
+</html>
